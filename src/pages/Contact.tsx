@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from 'react';
-import { Mail, Linkedin, Github, CheckCircle } from 'lucide-react';
+import { Mail, Linkedin, Github, CircleCheck as CheckCircle } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 import './Contact.css';
 
