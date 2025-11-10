@@ -1,0 +1,103 @@
+/* ========================================================
+   ESTILOS DO CARROSSEL - src/css/carousel.css
+   ======================================================== */
+
+/* O "Palco" (Viewport)
+  - 'overflow-x: hidden' é o mais importante aqui. Esconde os cards
+    que estão fora da área visível, permitindo o slide suave.
+  - 'position: relative' é útil para posicionar elementos
+    como setas (se as adicionarmos no futuro).
+*/
+.carousel-viewport {
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* O "Card" (Ator)
+  - 'flex-shrink: 0' impede que os cards encolham para caber no ecrã.
+  - 'width: 33.3333%' define que 3 cards devem caber no ecrã em
+    telas maiores (desktop).
+  - 'transform: scale(0.85)' e 'opacity: 0.6' é o estado "inativo".
+    Isto faz com que os cards nas laterais pareçam mais distantes.
+  - 'transition: ...' é a alma do efeito. Faz a animação de
+    crescimento e opacidade ser suave.
+*/
+.servico-card {
+  flex-shrink: 0;
+  width: 100%; /* Começa com 100% para mobile */
+  max-width: 420px; /* Um tamanho máximo razoável para o card */
+  
+  /* Estado "Inativo" (Padrão) */
+  transform: scale(0.85);
+  opacity: 0.6;
+  
+  /* A animação suave */
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  
+  /* Garante que o clique funciona bem em todos os elementos */
+  cursor: pointer;
+  
+  /* Evita que o texto seja selecionado ao arrastar */
+  user-select: none; 
+}
+
+/* O Card "Ativo" (O Foco Principal)
+  - Quando o JS adicionar a classe '.ativo', estes estilos
+    são aplicados.
+  - 'transform: scale(1.05)' torna o card central maior que
+    o seu tamanho normal, dando-lhe o destaque do vídeo.
+  - 'opacity: 1' traz o card para foco total.
+  - 'box-shadow' (opcional) adiciona uma sombra de "elevação".
+*/
+.servico-card.ativo {
+  /* Estado "Ativo" */
+  transform: scale(1.05); /* Um pouco maior para se destacar */
+  opacity: 1;
+  /* 'z-index' garante que o card ativo fique por cima
+    das sombras dos seus vizinhos.
+  */
+  z-index: 10; 
+}
+
+/*
+  Responsividade: Em telas maiores (desktops),
+  onde queremos ver 3 cards.
+*/
+@media (min-width: 768px) {
+  .servico-card {
+    /* Em desktops, queremos que 3 cards ocupem o espaço */
+    width: 33.3333%;
+  }
+
+  /* O 'card-content' (div interno) tinha 'm-4' (margin: 1rem).
+    Vamos reduzi-la em telas maiores para que os cards
+    fiquem mais próximos.
+  */
+  .servico-card .card-content {
+    margin: 0.5rem; /* Menos margem entre os cards */
+  }
+}
+
+
+/* Estilos dos Indicadores (Dots)
+  - Estes são os estilos base que o teu JS vai usar.
+*/
+#indicadores span {
+  height: 0.75rem; /* 12px */
+  width: 0.75rem; /* 12px */
+  border-radius: 9999px; /* rounded-full */
+  background-color: #D1D5DB; /* bg-gray-300 */
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Estilo do Indicador ATIVO
+  - O JS vai adicionar e remover esta classe.
+  - Vamos usar uma classe CSS em vez de depender apenas do Tailwind
+    para manter a lógica separada.
+*/
+#indicadores span.ativo {
+  background-color: #3B82F6; /* bg-blue-500 */
+  width: 2rem; /* Torna o 'dot' ativo mais comprido */
+}

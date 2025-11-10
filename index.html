@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Solicite o desenvolvimento do seu aplicativo com soluções profissionais e personalizadas.">
+    <meta name="author" content="Edson Chimuco">
+    <title>Solicitação de Serviços — Tecdigital</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="stylesheet" href="src/css/form-popup.css">
+    <link rel="stylesheet" href="./src/css/carousel.css" />
+
+    <style>
+        /* Parallax efeito suave */
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Transições suaves */
+        .fade-slide {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-slide.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900 leading-relaxed antialiased selection:bg-blue-100 selection:text-blue-800">
+
+    <section id="home-logo" class="bg-gray-50 py-10 md:py-14">
+        <div class="max-w-6xl mx-auto px-6 flex justify-center items-center">
+
+            <img src="src/assets/logo.png" alt="Tecdigital Logo" class="h-10 md:h-12 w-auto">
+
+        </div>
+    </section>
+
+    <!-- Hero com Parallax -->
+    <section class="h-[85vh] parallax flex items-center justify-center text-center"
+        style="background-image: url('./src/assets/bg-paralax.webp');">
+        <div class="bg-black/50 p-10 rounded-xl backdrop-blur-sm text-white">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Criação de Aplicativos Profissionais</h2>
+            <p class="text-lg mb-6">Desenvolvemos soluções digitais modernas e seguras para o seu negócio.</p>
+            <a href="#solicitacao"
+                class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-blue-400/30">
+                Solicitar Serviço
+            </a>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-20 overflow- ">
+
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="text-3xl font-bold text-center mb-4 fade-slide">Nossos Serviços</h3>
+            <p class="text-center text-gray-600 mb-10 fade-slide">Arraste para explorar todas as nossas soluções</p>
+        </div>
+
+        <div class="carousel-viewport">
+
+            <div id="carousel-track" class="flex transition-transform duration-500 ease-out">
+
+                <article class="servico-card">
+                    <div class="card-content bg-white p-8 rounded-2xl shadow-md m-4">
+                        <img src="./src/assets/app-mobile.png" alt="Aplicativos Mobile" loading="lazy"
+                            class="rounded-xl mb-6">
+                        <h4 class="text-xl font-semibold mb-3">Aplicativos Mobile</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Desenvolvemos apps para Android e iOS com
+                            interfaces modernas e performance otimizada.</p>
+                        <a href=""
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-9 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-blue-600/30">
+                            Saber Mais->
+                        </a>
+                        <a href="#solicitacao"
+                            class="mt-5 inline-block bg-blue-50 text-blue-600 px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-100 transition-all">
+                            Pedir Agora
+                        </a>
+                    </div>
+                </article>
+
+                <article class="servico-card">
+                    <div class="card-content bg-blue-600 p-8 rounded-2xl shadow-md m-4">
+                        <img src="./src/assets/app-web.png" alt="Aplicações Web" loading="lazy" class="rounded-xl mb-6">
+                        <h4 class="text-xl font-semibold mb-3">Aplicações Web</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Plataformas web responsivas, escaláveis e
+                            seguras com as tecnologias mais modernas.</p>
+                        <a href=""
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-9 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-blue-600/30">
+                            Saber Mais->
+                        </a>
+                        <a href="#solicitacao"
+                            class="mt-5 inline-block bg-blue-50 text-blue-600 px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-100 transition-all">
+                            Pedir Agora
+                        </a>
+                    </div>
+                </article>
+
+                <article class="servico-card">
+                    <div class="card-content bg-blue-600 p-8 rounded-2xl shadow-md m-4">
+                        <img src="./src/assets/sol.png" alt="Soluções corporativas" loading="lazy"
+                            class="rounded-xl mb-6">
+                        <h4 class="text-xl font-semibold mb-3">Soluções Corporativas</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Integramos sistemas empresariais e
+                            desenvolvemos software sob medida para o seu negócio.</p>
+                        <a href=""
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-9 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-blue-600/30">
+                            Saber Mais->
+                        </a>
+                        <a href="#solicitacao"
+                            class="mt-5 inline-block bg-blue-50 text-blue-600 px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-100 transition-all">
+                            Pedir Agora
+                        </a>
+                    </div>
+                </article>
+
+                <article class="servico-card">
+                    <div class="card-content bg-blue-600 p-8 rounded-2xl shadow-md m-4">
+                        <img src="./src/assets/uix.png" alt="UI/UX Design" loading="lazy" class="rounded-xl mb-6">
+                        <h4 class="text-xl font-semibold mb-3">UI/UX Design</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Projetamos interfaces elegantes e intuitivas,
+                            focadas na melhor experiência do utilizador.</p>
+                        <a href=""
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-9 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-blue-600/30">
+                            Saber Mais->
+                        </a>
+                        <a href="#solicitacao"
+                            class="mt-5 inline-block bg-blue-50 text-blue-600 px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-100 transition-all">
+                            Pedir Agora
+                        </a>
+                    </div>
+                </article>
+
+                <article class="servico-card">
+                    <div class="card-content bg-blue-600 p-8 rounded-2xl shadow-md m-4">
+                        <img src="./src/assets/api.png" alt="API & Integrações" loading="lazy" class="rounded-xl mb-6">
+                        <h4 class="text-xl font-semibold mb-3">API & Integrações</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Desenvolvemos APIs seguras e integramos
+                            sistemas de forma eficiente e escalável.</p>
+                        <a href=""
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-9 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-blue-600/30">
+                            Saber Mais->
+                        </a>
+                        <a href="#solicitacao"
+                            class="mt-5 inline-block bg-blue-50 text-blue-600 px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-100 transition-all">
+                            Pedir Agora
+                        </a>
+                    </div>
+                </article>
+
+                <article class="servico-card">
+                    <div class="card-content bg-blue-600 p-8 rounded-2xl shadow-md m-4">
+                        <img src="./src/assets/man.png" alt="Manutenção de Software" loading="lazy"
+                            class="rounded-xl mb-6">
+                        <h4 class="text-xl font-semibold mb-3">Manutenção</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Atualizamos, otimizamos e damos suporte
+                            contínuo às tuas aplicações.</p>
+                        <a href=""
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-9 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-blue-600/30">
+                            Saber Mais->
+                        </a>
+                        <a href="#solicitacao"
+                            class="mt-5 inline-block bg-blue-50 text-blue-600 px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-100 transition-all">
+                            Pedir Agora
+                        </a>
+                    </div>
+                </article>
+
+                <article class="servico-card">
+                    <div class="card-content bg-blue-600 p-8 rounded-2xl shadow-md m-4">
+                        <img src="./src/assets/d8.jpg" alt="Consultoria" loading="lazy" class="rounded-xl mb-6">
+                        <h4 class="text-xl font-semibold mb-3">Consultoria</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Ajudamos empresas a planejar, estruturar e
+                            lançar produtos digitais de sucesso.</p>
+                        <a href=""
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-9 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-blue-600/30">
+                            Saber Mais->
+                        </a>
+                        <a href="#solicitacao"
+                            class="mt-5 inline-block bg-blue-50 text-blue-600 px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-100 transition-all">
+                            Pedir Agora
+                        </a>
+                    </div>
+                </article>
+
+                <article class="servico-card">
+                    <div class="card-content bg-blue-600 p-8 rounded-2xl shadow-md m-4">
+                        <img src="./src/assets/d6.jpg" alt="Segurança de Aplicações" loading="lazy"
+                            class="rounded-xl mb-6">
+                        <h4 class="text-xl font-semibold mb-3">Segurança</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Aplicamos práticas avançadas de segurança e
+                            autenticação em todos os projetos.</p>
+                        <a href=""
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-9 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-blue-600/30">
+                            Saber Mais->
+                        </a>
+                        <a href="#solicitacao"
+                            class="mt-5 inline-block bg-blue-50 text-blue-600 px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-100 transition-all">
+                            Pedir Agora
+                        </a>
+                    </div>
+                </article>
+
+                <article class="servico-card">
+                    <div class="card-content bg-blue-600 p-8 rounded-2xl shadow-md m-4">
+                        <img src="./src/assets/d4.jpg" alt="Hospedagem e Deploy" loading="lazy" class="rounded-xl mb-6">
+                        <h4 class="text-xl font-semibold mb-3">Hospedagem e Deploy</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Configuramos ambientes cloud e automatizamos o
+                            deploy das tuas aplicações.</p>
+                        <a href=""
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-9 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-blue-600/30">
+                            Saber Mais->
+                        </a>
+                        <a href="#solicitacao"
+                            class="mt-5 inline-block bg-blue-50 text-blue-600 px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-100 transition-all">
+                            Pedir Agora
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+        <div id="indicadores" class="flex justify-center mt-10 space-x-2"></div>
+
+    </section>
+
+    <div id="form-overlay" class="form-overlay hidden">
+
+        <div id="form-container" class="form-container">
+
+            <div class="form-frame"></div>
+            <div class="form-frame-mask"></div>
+
+            <button id="close-form"
+                class="absolute top-3 right-5 text-gray-400 hover:text-gray-600 text-2xl">&times;</button>
+
+            <div class="form-inner">
+
+                <h3 id="form-title" class="text-2xl font-semibold text-gray-800 mb-4">Solicitar Serviço</h3>
+                <p class="text-gray-500 text-sm mb-6">Preencha os campos abaixo para solicitar mais informações sobre o
+                    serviço selecionado.</p>
+
+                <form id="solicitacao-form" class="space-y-4">
+                    <input type="hidden" id="servicoSelecionado" name="servicoSelecionado">
+
+                    <div>
+                        <label class="block text-gray-700 text-sm mb-1">Nome Completo</label>
+                        <input type="text" name="nome" required
+                            class="w-full border border-gray-300 rounded-lg p-3 focus:border-blue-500 focus:ring-2 focus:ring-blue-300 outline-none"
+                            placeholder="Ex: Edson Chimuco">
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 text-sm mb-1">E-mail</label>
+                        <input type="email" name="email" required
+                            class="w-full border border-gray-300 rounded-lg p-3 focus:border-blue-500 focus:ring-2 focus:ring-blue-300 outline-none"
+                            placeholder="Ex: Chimuco.geral@gmail.com">
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 text-sm mb-1">Telefone</label>
+                        <input type="tel" name="telefone"
+                            class="w-full border border-gray-300 rounded-lg p-3 focus:border-blue-500 focus:ring-2 focus:ring-blue-300 outline-none"
+                            placeholder="Ex: 922 411 734">
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 text-sm mb-1">Serviço de Interesse</label>
+                        <input type="text" id="servicoInput" readonly
+                            class="w-full border border-gray-200 bg-gray-100 rounded-lg p-3 text-gray-600">
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-700 text-sm mb-1">Mensagem</label>
+                        <textarea name="mensagem" rows="4"
+                            class="w-full border border-gray-300 rounded-lg p-3 focus:border-blue-500 focus:ring-2 focus:ring-blue-300 outline-none"
+                            placeholder="Ex: Gostaria de reber um site, para nossa empresa. "></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                        Enviar Pedido
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Sobre -->
+    <section id="sobre" class="max-w-5xl mx-auto px-6 py-20 fade-slide">
+        <h3 class="text-3xl font-bold mb-6 text-center">Sobre a Tecdigital</h3>
+        <p class="text-gray-600 text-center max-w-3xl mx-auto">Somos uma equipe de programadores e designers
+            especializados em criar aplicativos modernos, funcionais e otimizados. Nosso foco é entregar soluções
+            digitais que realmente impulsionem negócios e ideias.</p>
+    </section>
+
+    <!-- Contato -->
+    <footer id="contato" class="bg-gray-900 text-gray-300 py-16 fade-slide">
+        <div class="max-w-6xl mx-auto px-6">
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+
+                <div class="md:col-span-2">
+                    <h4 class="text-xl font-semibold text-white mb-4">Tecdigital</h4>
+                    <p class="text-gray-400 text-sm max-w-md leading-relaxed">
+                        Desenvolvemos soluções digitais modernas e seguras para o seu negócio,
+                        com foco em interfaces elegantes, performance otimizada e na melhor experiência do utilizador.
+                    </p>
+                    <div class="flex space-x-5 mt-6">
+                        <a href="#" aria-label="LinkedIn da Tecidigital"
+                            class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="GitHub da Tecidigital"
+                            class="text-gray-400 hover:text-white transition-colors duration-200">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.034c-3.338.726-4.033-1.61-4.033-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.109-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram da Tecidigital"
+                            class="text-gray-400 hover:text-pink-400 transition-colors duration-200">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 1.172.053 1.902.218 2.458.422.64.23 1.08.517 1.516.954.437.437.724.876.954 1.516.204.556.368 1.286.422 2.458.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.053 1.172-.218 1.902-.422 2.458-.23.64-.517 1.08-.954 1.516-.437.437-.876.724-1.516.954-.556.204-1.286.368-2.458.422-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.172-.053-1.902-.218-2.458-.422-.64-.23-1.08-.517-1.516-.954-.437-.437-.724-.876-.954-1.516-.204-.556-.368-1.286-.422-2.458-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.053-1.172.218 1.902.422-2.458.23-.64.517 1.08.954-1.516.437.437.876.724 1.516.954.556.204 1.286.368 2.458.422 1.266.058 1.646.07 4.85.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.356.06-2.303.248-3.118.542-.85.298-1.557.718-2.262 1.423-.705.705-1.125 1.412-1.423 2.262-.294.815-.482 1.762-.542 3.118-.058 1.28-.072 1.688-.072 4.947s.014 3.667.072 4.947c.06 1.356.248 2.303.542 3.118.298.85.718 1.557 1.423 2.262.705.705 1.412 1.125 2.262 1.423.815.294 1.762.482 3.118.542 1.28.058 1.688.072 4.947.072s3.667-.014 4.947-.072c1.356-.06 2.303-.248 3.118-.542.85-.298 1.557-.718 2.262-1.423.705.705 1.125 1.412 1.423-2.262.294-.815.482-1.762.542-3.118.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.06-1.356-.248-2.303-.542-3.118-.298-.85-.718-1.557-1.423-2.262-.705-.705-1.412-1.125-2.262-1.423-.815-.294-1.762-.482-3.118-.542-1.28-.058-1.688-.072-4.947-.072z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="text-base font-semibold text-white mb-5 uppercase tracking-wider">Explorar</h5>
+                    <ul class="space-y-3">
+                        <li><a href="#servicos"
+                                class="text-sm text-gray-400 hover:text-white transition-colors duration-200">Nossos
+                                Serviços</a></li>
+                        <li><a href="#sobre"
+                                class="text-sm text-gray-400 hover:text-white transition-colors duration-200">Sobre
+                                Nós</a></li>
+                        <li><a href="/portfolio"
+                                class="text-sm text-gray-400 hover:text-white transition-colors duration-200">Portfólio</a>
+                        </li>
+                        <li><a href="/blog"
+                                class="text-sm text-gray-400 hover:text-white transition-colors duration-200">Blog &
+                                Insights</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="text-base font-semibold text-white mb-5 uppercase tracking-wider">Empresa</h5>
+                    <ul class="space-y-3">
+                        <li><a href="/carreiras"
+                                class="text-sm text-gray-400 hover:text-white transition-colors duration-200">Trabalhe
+                                Conosco</a></li>
+                        <li><a href="#solicitacao"
+                                class="text-sm text-gray-400 hover:text-white transition-colors duration-200">Solicitar
+                                Serviço</a></li>
+                        <li><a href="/politica-de-privacidade"
+                                class="text-sm text-gray-400 hover:text-white transition-colors duration-200">Política
+                                de Privacidade</a></li>
+                        <li><a href="/termos-de-uso"
+                                class="text-sm text-gray-400 hover:text-white transition-colors duration-200">Termos de
+                                Uso</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-500">
+                    &copy; 2025 Tecidigital. Todos os direitos reservados.
+                </p>
+                <p class="text-sm text-gray-600 mt-4 md:mt-0">
+                    Design por <a href="#" class="hover:text-gray-400">Edson Chimuco</a>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- JS: fade/slide + parallax -->
+    <script>
+        // Intersection Observer para animações
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-slide').forEach(el => observer.observe(el));
+
+        // Parallax efeito dinâmico (JS puro)
+        window.addEventListener('scroll', () => {
+            const parallax = document.querySelector('.parallax');
+            let offset = window.pageYOffset;
+            parallax.style.backgroundPositionY = offset * 0.5 + "px";
+        });
+    </script>
+
+    <script src="./src/js/slides.js"></script>
+    <script src="src/js/form-popup.js"></script>
+</body>
+
+</body>
+
+</html>
